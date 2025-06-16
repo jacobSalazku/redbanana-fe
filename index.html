@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>RedBanana</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main class="container">
+      <header class="header">
+        <div class="header__logo">
+          <img src="./src/images/logo-redbanana.png" alt="RedBanana logo" />
+        </div>
+
+        <div class="header__searchbar">
+          <input
+            aria-label="Zoek veld"
+            type="text"
+            class="header__searchbar-input"
+            placeholder="Waar ben je naar op zoek?"
+          />
+          <button aria-label="Zoek knop" class="header__searchbar-button">
+            <span>
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </span>
+          </button>
+        </div>
+
+        <ul class="header__buttons">
+          <li class="header__buttons-item">
+            <i class="fa-solid fa-newspaper"></i>
+            <span>Blog</span>
+          </li>
+          <li class="header__buttons-item">
+            <i class="fa-regular fa-user"></i>
+            <span>Account</span>
+          </li>
+          <li class="header__buttons-item">
+            <i class="fa-solid fa-bag-shopping"></i>
+            <span>Winkelwagen</span>
+          </li>
+        </ul>
+
+        <button
+          type="button"
+          aria-label="Hamburger button"
+          class="hamburger"
+          id="hamburger"
+        >
+          <span class="bar smallest"></span>
+          <span class="bar small"></span>
+          <span class="bar big"></span>
+        </button>
+      </header>
+      <nav class="nav">
+        <ul role="list" class="nav__list">
+          <li class="nav__item">
+            <a href="/apple">Apple accessoires</a>
+          </li>
+          <li class="nav__item">
+            <a href="/samsung">Samsung accessoires</a>
+          </li>
+          <li class="nav__item">
+            <a href="/overige">Overige accessoires</a>
+          </li>
+          <li class="nav__item">
+            <a href="/reparatie">Reparatie</a>
+          </li>
+        </ul>
+
+        <ul class="nav__item-nested">
+          <li class="nav__item">
+            <a href="/blog">Blog</a>
+          </li>
+          <li class="nav__item">
+            <a href="/contact">Contact</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="mobile__searchbar">
+        <input
+          aria-label="Zoek veld"
+          type="text"
+          class="mobile__searchbar-input"
+          placeholder="Waar ben je naar op zoek?"
+        />
+        <button aria-label="Zoek knop" class="mobile__searchbar-button">
+          <span>
+            hey
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </span>
+        </button>
+      </div>
+
+      <div class="hero">
+        <div class="hero__cta">
+          <h1>Bestel eenvoudig de tofste accessoires voor jouw smartphone</h1>
+          <span>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc et
+            dictum felis, at semper risus. Phasellus id convallis quam.
+          </span>
+          <button
+            aria-label="Bekijk accessoires"
+            class="button button--primary pt-4"
+            onclick="location.href='/accessoires'"
+          >
+            Bekijk alle accessoires
+          </button>
+        </div>
+
+        <img
+          src="./src/images/hero-image.png"
+          alt="Hero image"
+          class="hero__image"
+        />
+      </div>
+    </main>
+    <script type="module" src="/src/js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,147 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+}
+
+hr {
+  opacity: 0.25;
+  margin: 1rem 0;
+  border: 0;
+  background-color: currentColor;
+  color: inherit;
+}
+
+hr:not([size]) {
+  height: 1px;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.75rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+}
+
+h5 {
+  font-size: 1.25rem;
+}
+
+h6 {
+  font-size: 1rem;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ol,
+ul {
+  padding-left: 0;
+}
+
+ol,
+ul,
+dl {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ol ol,
+ul ul,
+ol ul,
+ul ol {
+  margin-bottom: 0;
+}
+
+blockquote {
+  margin: 0 0 1rem;
+}
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+a {
+  color: #0d6efd;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #024dbc;
+  text-decoration: underline;
+}
+
+figure {
+  margin: 0 0 1rem;
+}
+img {
+  vertical-align: middle;
+}
+svg {
+  vertical-align: middle;
+  overflow: hidden;
+}
+table {
+  border-collapse: collapse;
+}
+
+label {
+  display: inline-block;
+  margin-bottom: 0.5rem;
+}
+button {
+  border-radius: 0;
+}
+button:focus {
+  outline: 1px dotted;
+}
+input,
+button,
+select,
+optgroup,
+textarea {
+  margin: 0;
+  font-size: inherit;
+  line-height: inherit;
+  font-family: inherit;
+}
+button,
+input {
+  overflow: visible;
+}
+button,
+select {
+  text-transform: none;
+}
+select {
+  word-wrap: normal;
+}
+
+textarea {
+  overflow: auto;
+  resize: vertical;
+}
+fieldset {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  min-width: 0;
+}
+
+main {
+  display: block;
+}
+[hidden] {
+  display: none !important;
+}
