@@ -31,11 +31,6 @@
     border: 1px solid var(--color-neutral-700);
   }
 
-  &::placeholder {
-    color: var(--color-neutral-750);
-    font-weight: 300;
-  }
-
   @media screen and (min-width: 64rem) {
     display: flex;
     padding-left: 1rem;
@@ -78,23 +73,27 @@
 }
 
 .mobile__searchbar {
+  position: relative;
   display: flex;
   width: 100%;
-  padding: var(--space-4) var(--space-20);
+  padding: var(--space-8) var(--space-20);
   border: 1px solid var(--color-neutral-300);
   border-radius: 5px;
   background-color: var(--color-neutral-200);
+  font-family: 'Poppins', sans-serif;
 
   @media screen and (min-width: 64rem) {
     display: none;
   }
 }
+
 .mobile__searchbar-input {
   width: 80%;
   height: 40px;
   border: none;
   border-radius: 5px;
   padding-left: var(--space-32);
+  padding-right: 4rem;
   font-size: 1rem;
   background-color: var(--color-neutral-100);
 
@@ -105,13 +104,17 @@
 }
 
 .mobile__searchbar-button {
+  position: absolute;
+  right: 21.5%;
+  top: 50%;
+  transform: translateY(-50%);
   transition: background-color 0.3s ease;
   cursor: pointer;
-  border: none;
   border-radius: 5px;
   background-color: var(--color-primary-200);
+  border: none;
   width: 3.75rem;
-  height: var(--space-44);
+  height: 35px;
   color: #fff;
   font-size: 1rem;
 
@@ -124,7 +127,7 @@
     font-size: 1.325rem;
   }
 
-  @media screen {
+  @media screen and (min-width: 64rem) {
     display: none;
   }
 }
