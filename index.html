@@ -7,6 +7,11 @@
 
     <title>RedBanana</title>
     <link
+      rel="icon"
+      type="image/x-icon"
+      href="./src/images/logo-redbanana.png"
+    />
+    <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
@@ -64,6 +69,7 @@
           <span class="bar big"></span>
         </button>
       </header>
+
       <nav class="nav">
         <ul role="list" class="nav__list">
           <li class="nav__item">
@@ -89,6 +95,7 @@
           </li>
         </ul>
       </nav>
+
       <div class="mobile__searchbar">
         <input
           aria-label="Zoek veld"
@@ -98,7 +105,6 @@
         />
         <button aria-label="Zoek knop" class="mobile__searchbar-button">
           <span>
-            hey
             <i class="fa-solid fa-magnifying-glass"></i>
           </span>
         </button>
@@ -126,6 +132,35 @@
           class="hero__image"
         />
       </div>
+      <section class="assortments">
+        <h2 class="assortments__title">Ontdek assortiment</h2>
+        <div class="assortments__grid">
+          <a class="assortments__item assortments__item--first">
+            <span>Apple Iphone 13</span>
+            <img src="./src/images/assortiment-iphone.png" />
+          </a>
+          <a class="assortments__item assortments__item--second">
+            <span>Samsung Galaxy S22</span>
+            <img src="./src/images/assortiment-samsung.png" />
+          </a>
+          <a class="assortments__item assortments__item--third">
+            <span>Huawei P30</span>
+            <img src="./src/images/assortiment-huawei.png" />
+          </a>
+          <a class="assortments__item assortments__item--fourth">
+            <span>Telefoonhoesjes</span>
+            <img src="./src/images/telefoonhoesjes.png" />
+          </a>
+          <a class="assortments__item assortments__item--fifth">
+            <span>Reparaties</span>
+            <img src="./src/images/reparaties.png" />
+          </a>
+          <a class="assortments__item assortments__item--sixth">
+            <span>Overige accessoires</span>
+            <img src="./src/images/assortiment-overige.png" />
+          </a>
+        </div>
+      </section>
     </main>
     <script type="module" src="/src/js/main.js"></script>
   </body>
