@@ -80,6 +80,7 @@
   border: 1px solid var(--color-neutral-300);
   border-radius: 5px;
   background-color: var(--color-neutral-200);
+  gap: var(--space-8);
 
   @media screen and (min-width: 64rem) {
     display: none;
@@ -87,7 +88,7 @@
 }
 
 .mobile__searchbar-input {
-  width: 80%;
+  width: 85%;
   height: 40px;
   border: none;
   border-radius: 5px;
@@ -104,8 +105,8 @@
 
 .mobile__searchbar-button {
   position: absolute;
-  right: 21.5%;
-  top: 50%;
+  right: 17.5%;
+  top: 46%;
   transform: translateY(-50%);
   transition: background-color 0.3s ease;
   cursor: pointer;
@@ -128,5 +129,29 @@
 
   @media screen and (min-width: 64rem) {
     display: none;
+  }
+}
+
+.mobile__user {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: var(--space-8);
+  width: 3.75rem;
+  height: var(--space-44);
+  width: 15%;
+  cursor: pointer;
+
+  &:hover {
+    background-color: var(--color-primary-800);
+  }
+
+  i {
+    font-size: 1.5rem;
+  }
+
+  @media screen and (min-width: 40rem) {
+    justify-content: space-between;
+    padding: 0 var(--space-24);
   }
 }
