@@ -1,0 +1,153 @@
+.footer {
+  background-color: var(--color-secondary-100);
+  padding: var(--space-40) var(--space-32);
+  font-family: 'Poppins', sans-serif;
+  color: var(--color-neutral-900);
+  width: 100%;
+  box-sizing: border-box;
+
+  @media (min-width: 48rem) {
+    padding: var(--space-40) var(--space-40);
+  }
+
+  @media (min-width: 64rem) {
+    padding: var(--space-80) var(--space-80);
+  }
+}
+
+.footer__container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  max-width: 80rem;
+  margin: 0 auto;
+
+  @media (min-width: 48rem) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+.footer__block {
+  min-width: 12.5rem;
+
+  @media (min-width: 48rem) {
+    flex: 1 1 0;
+    max-width: 20%;
+  }
+
+  @media (min-width: 64rem) {
+    max-width: 22%;
+  }
+}
+
+.footer__block {
+  h3 {
+    font-size: 1.25rem;
+    margin-bottom: var(--space-16);
+    font-weight: 600;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    li {
+      margin-bottom: var(--space-8);
+
+      a {
+        text-decoration: none;
+        color: var(--color-neutral-900s);
+        transition: color 0.3s ease;
+
+        &:hover {
+          color: var(--color-primary-100);
+        }
+      }
+    }
+  }
+}
+
+.footer__list {
+  li {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.95rem;
+    padding: var(--space-4) 0;
+  }
+
+  .day {
+    text-align: left;
+    width: 50%;
+  }
+
+  .hour {
+    text-align: right;
+    width: 50%;
+  }
+}
+
+.footer__contact {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-16);
+  margin-bottom: var(--space-16);
+}
+
+.footer__address {
+  display: flex;
+  gap: var(--space-16);
+  align-items: center;
+
+  i {
+    font-size: 1.75rem;
+    color: var(--color-primary-100);
+  }
+
+  &-details {
+    display: flex;
+    flex-direction: column;
+    font-size: 0.95rem;
+    color: var(--color-neutral-900s);
+  }
+}
+
+.footer__address-details {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.95rem;
+  color: var(--color-neutral-900s);
+}
+
+.footer__phone-email {
+  display: flex;
+  align-items: center;
+  gap: var(--space-16);
+  font-size: 0.95rem;
+  margin-bottom: var(--space-8);
+  color: var(--color-neutral-900s);
+
+  i {
+    font-size: 1.25rem;
+    color: var(--color-primary-100);
+  }
+}
+
+.footer__email {
+  color: var(--color-primary-100);
+  text-decoration: none;
+  transition: color 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-16);
+
+  &:hover {
+    color: var(--color-primary-200);
+  }
+
+  i {
+    font-size: 1.2rem;
+  }
+}
