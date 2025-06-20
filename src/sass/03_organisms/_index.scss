@@ -1,2 +1,7 @@
 @use './header' as header;
 @use './navigation' as navigation;
+@use './product-card' as card;
+@use './review-card' as review;
+@use './blog-card';
+@use './footer';
+@use './footer-newsletter' as newsletter;
