@@ -44,17 +44,35 @@
         </div>
 
         <ul class="header__buttons">
-          <li class="header__buttons-item">
-            <i class="fa-solid fa-newspaper"></i>
-            <span>Blog</span>
+          <li>
+            <a
+              href="/contact"
+              aria-label="Contact"
+              class="header__buttons-item"
+            >
+              <i class="fa-solid fa-newspaper"></i>
+              <span>Blog</span>
+            </a>
           </li>
-          <li class="header__buttons-item">
-            <i class="fa-regular fa-user"></i>
-            <span>Account</span>
+          <li>
+            <a
+              href="/account"
+              aria-label="Account"
+              class="header__buttons-item"
+            >
+              <i class="fa-regular fa-user"></i>
+              <span>Account</span>
+            </a>
           </li>
-          <li class="header__buttons-item">
-            <i class="fa-solid fa-bag-shopping"></i>
-            <span>Winkelwagen</span>
+          <li>
+            <a
+              href="/winkelwagen"
+              aria-label="Winkelwagen"
+              class="header__buttons-item"
+            >
+              <i class="fa-solid fa-bag-shopping"></i>
+              <span>Winkelwagen</span>
+            </a>
           </li>
         </ul>
 
@@ -72,11 +90,14 @@
 
       <nav class="nav">
         <ul role="list" class="nav__list">
-          <li class="nav__item">
+          <li class="nav__item nav__item--first">
             <a href="/apple">Apple accessoires</a>
           </li>
           <li class="nav__item">
             <a href="/samsung">Samsung accessoires</a>
+          </li>
+          <li class="nav__item">
+            <a href="/huawei">Huawei accessoires</a>
           </li>
           <li class="nav__item">
             <a href="/overige">Overige accessoires</a>
@@ -108,9 +129,23 @@
             <i class="fa-solid fa-magnifying-glass"></i>
           </span>
         </button>
+        <div class="mobile__user">
+          <a class="header__buttons-item" href="/account" aria-label="Account">
+            <i class="fa-regular fa-user"></i>
+            <span class="sr-only">Account</span>
+          </a>
+          <a
+            class="header__buttons-item"
+            href="/winkelwagen"
+            aria-label="Winkelwagen"
+          >
+            <i class="fa-solid fa-bag-shopping"></i>
+            <span class="sr-only">Winkelwagen</span>
+          </a>
+        </div>
       </div>
 
-      <div class="hero">
+      <div class="hero section">
         <div class="hero__cta">
           <h1>Bestel eenvoudig de tofste accessoires voor jouw smartphone</h1>
           <span>
@@ -130,37 +165,812 @@
           src="./src/images/hero-image.png"
           alt="Hero image"
           class="hero__image"
+          loading="eager"
         />
       </div>
-      <section class="assortments">
-        <h2 class="assortments__title">Ontdek assortiment</h2>
+
+      <section class="assortments section">
+        <h3 class="assortments__title">Ontdek assortiment</h3>
         <div class="assortments__grid">
-          <a class="assortments__item assortments__item--first">
+          <a
+            class="assortments__item assortments__item--first"
+            aria-label=" ga naar Apple Iphone 13"
+          >
             <span>Apple Iphone 13</span>
-            <img src="./src/images/assortiment-iphone.png" />
+            <img
+              src="./src/images/assortiment-iphone.png"
+              alt="Apple Iphone 13"
+            />
           </a>
-          <a class="assortments__item assortments__item--second">
+          <a
+            class="assortments__item assortments__item--second"
+            aria-label=" ga naar Samsung Galaxy S22"
+          >
             <span>Samsung Galaxy S22</span>
-            <img src="./src/images/assortiment-samsung.png" />
+            <img
+              src="./src/images/assortiment-samsung.png"
+              alt="Samsung Galaxy S22"
+            />
           </a>
-          <a class="assortments__item assortments__item--third">
+          <a
+            class="assortments__item assortments__item--third"
+            aria-label=" ga naar Huawei P30"
+          >
             <span>Huawei P30</span>
-            <img src="./src/images/assortiment-huawei.png" />
+            <img src="./src/images/assortiment-huawei.png" alt="Huawei P30" />
           </a>
-          <a class="assortments__item assortments__item--fourth">
+          <a
+            class="assortments__item assortments__item--fourth"
+            aria-label=" ga naar Telefoonhoesjes"
+          >
             <span>Telefoonhoesjes</span>
-            <img src="./src/images/telefoonhoesjes.png" />
+            <img src="./src/images/telefoonhoesjes.png" alt="Telefoonhoesjes" />
           </a>
-          <a class="assortments__item assortments__item--fifth">
+          <a
+            class="assortments__item assortments__item--fifth"
+            aria-label=" ga naar Reparaties"
+          >
             <span>Reparaties</span>
-            <img src="./src/images/reparaties.png" />
+            <img src="./src/images/reparaties.png" alt="Reparaties" />
           </a>
-          <a class="assortments__item assortments__item--sixth">
+          <a
+            class="assortments__item assortments__item--sixth"
+            aria-label=" ga naar Overige accessoires"
+          >
             <span>Overige accessoires</span>
-            <img src="./src/images/assortiment-overige.png" />
+            <img
+              src="./src/images/assortiment-overige.png"
+              alt="Overige accessoires"
+            />
           </a>
         </div>
       </section>
+
+      <section class="swiper product__slider section">
+<div class="bg-partial"></div>
+        <h2 class="font-medium">Best verkocht</h2>
+        <div class="swiper-wrapper">
+          <article class="product-card swiper-slide">
+            <span class="product-card__favorite">
+              <i class="fa-regular fa-heart"></i>
+            </span>
+            <div class="product-card__image">
+              <img src="./src/images/iphone.png" alt="iphone artikel" />
+            </div>
+            <div class="product-card__details">
+              <div class="product-card__reviews">
+                <span
+                  class="product-card__reviews-item product-card__reviews-item--stars"
+                >
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </span>
+                <span class="product-card__reviews-item">|</span>
+                <div
+                  class="product-card__reviews-item product-card__reviews-item--stock"
+                >
+                  <i class="fa-solid fa-check"></i>
+                  <p>Op voorraad</p>
+                </div>
+              </div>
+              <div class="product-card__description">
+                Leren hoesje met MagSafe voor iPhone 13 Pro Max
+              </div>
+              <div class="product-card__footer">
+                <div class="product-card__price-tag">
+                  <span>€80,00</span>
+                  <p>€65,00</p>
+                </div>
+                <button class="button button--product">
+                  <p class="sr-only">Voeg toe aan winkelwagen</p>
+                  <i class="fa-solid fa-bag-shopping"></i>
+                </button>
+              </div>
+            </div>
+          </article>
+          <article class="product-card swiper-slide">
+            <span class="product-card__favorite">
+              <i class="fa-regular fa-heart"></i>
+            </span>
+            <div class="product-card__image">
+              <img src="./src/images/iphone.png" alt="iphone artikel" />
+            </div>
+            <div class="product-card__details">
+              <div class="product-card__reviews">
+                <span
+                  class="product-card__reviews-item product-card__reviews-item--stars"
+                >
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </span>
+                <span class="product-card__reviews-item">|</span>
+                <div
+                  class="product-card__reviews-item product-card__reviews-item--stock"
+                >
+                  <i class="fa-solid fa-check"></i>
+                  <p>Op voorraad</p>
+                </div>
+              </div>
+              <div class="product-card__description">
+                Leren hoesje met MagSafe voor iPhone 13 Pro Max
+              </div>
+              <div class="product-card__footer">
+                <div class="product-card__price-tag">
+                  <span>€80,00</span>
+                  <p>€65,00</p>
+                </div>
+                <button class="button button--product">
+                  <p class="sr-only">Voeg toe aan winkelwagen</p>
+                  <i class="fa-solid fa-bag-shopping"></i>
+                </button>
+              </div>
+            </div>
+          </article>
+          <article class="product-card swiper-slide">
+            <span class="product-card__favorite">
+              <i class="fa-regular fa-heart"></i>
+            </span>
+            <div class="product-card__image">
+              <img src="./src/images/iphone.png" alt="iphone artikel" />
+            </div>
+            <div class="product-card__details">
+              <div class="product-card__reviews">
+                <span
+                  class="product-card__reviews-item product-card__reviews-item--stars"
+                >
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </span>
+                <span class="product-card__reviews-item">|</span>
+                <div
+                  class="product-card__reviews-item product-card__reviews-item--stock"
+                >
+                  <i class="fa-solid fa-check"></i>
+                  <p>Op voorraad</p>
+                </div>
+              </div>
+              <div class="product-card__description">
+                Leren hoesje met MagSafe voor iPhone 13 Pro Max
+              </div>
+              <div class="product-card__footer">
+                <div class="product-card__price-tag">
+                  <span>€80,00</span>
+                  <p>€65,00</p>
+                </div>
+                <button class="button button--product">
+                  <p class="sr-only">Voeg toe aan winkelwagen</p>
+                  <i class="fa-solid fa-bag-shopping"></i>
+                </button>
+              </div>
+            </div>
+          </article>
+          <article class="product-card swiper-slide">
+            <span class="product-card__favorite">
+              <i class="fa-regular fa-heart"></i>
+            </span>
+            <div class="product-card__image">
+              <img src="./src/images/iphone.png" alt="iphone artikel" />
+            </div>
+            <div class="product-card__details">
+              <div class="product-card__reviews">
+                <span
+                  class="product-card__reviews-item product-card__reviews-item--stars"
+                >
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </span>
+                <span class="product-card__reviews-item">|</span>
+                <div
+                  class="product-card__reviews-item product-card__reviews-item--stock"
+                >
+                  <i class="fa-solid fa-check"></i>
+                  <p>Op voorraad</p>
+                </div>
+              </div>
+              <div class="product-card__description">
+                Leren hoesje met MagSafe voor iPhone 13 Pro Max
+              </div>
+              <div class="product-card__footer">
+                <div class="product-card__price-tag">
+                  <span>€80,00</span>
+                  <p>€65,00</p>
+                </div>
+                <button class="button button--product">
+                  <p class="sr-only">Voeg toe aan winkelwagen</p>
+                  <i class="fa-solid fa-bag-shopping"></i>
+                </button>
+              </div>
+            </div>
+          </article>
+          <article class="product-card swiper-slide">
+            <span class="product-card__favorite">
+              <i class="fa-regular fa-heart"></i>
+            </span>
+            <div class="product-card__image">
+              <img src="./src/images/iphone.png" alt="iphone artikel" />
+            </div>
+            <div class="product-card__details">
+              <div class="product-card__reviews">
+                <span
+                  class="product-card__reviews-item product-card__reviews-item--stars"
+                >
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </span>
+                <span class="product-card__reviews-item">|</span>
+                <div
+                  class="product-card__reviews-item product-card__reviews-item--stock"
+                >
+                  <i class="fa-solid fa-check"></i>
+                  <p>Op voorraad</p>
+                </div>
+              </div>
+              <div class="product-card__description">
+                Leren hoesje met MagSafe voor iPhone 13 Pro Max
+              </div>
+              <div class="product-card__footer">
+                <div class="product-card__price-tag">
+                  <span>€80,00</span>
+                  <p>€65,00</p>
+                </div>
+                <button class="button button--product">
+                  <p class="sr-only">Voeg toe aan winkelwagen</p>
+                  <i class="fa-solid fa-bag-shopping"></i>
+                </button>
+              </div>
+            </div>
+          </article>
+          <article class="product-card swiper-slide">
+            <span class="product-card__favorite">
+              <i class="fa-regular fa-heart"></i>
+            </span>
+            <div class="product-card__image">
+              <img src="./src/images/iphone.png" alt="iphone artikel" />
+            </div>
+            <div class="product-card__details">
+              <div class="product-card__reviews">
+                <span
+                  class="product-card__reviews-item product-card__reviews-item--stars"
+                >
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </span>
+                <span class="product-card__reviews-item">|</span>
+                <div
+                  class="product-card__reviews-item product-card__reviews-item--stock"
+                >
+                  <i class="fa-solid fa-check"></i>
+                  <p>Op voorraad</p>
+                </div>
+              </div>
+              <div class="product-card__description">
+                Leren hoesje met MagSafe voor iPhone 13 Pro Max
+              </div>
+              <div class="product-card__footer">
+                <div class="product-card__price-tag">
+                  <span>€80,00</span>
+                  <p>€65,00</p>
+                </div>
+                <button class="button button--product">
+                  <p class="sr-only">Voeg toe aan winkelwagen</p>
+                  <i class="fa-solid fa-bag-shopping"></i>
+                </button>
+              </div>
+            </div>
+          </article>
+          <article class="product-card swiper-slide">
+            <span class="product-card__favorite">
+              <i class="fa-regular fa-heart"></i>
+            </span>
+            <div class="product-card__image">
+              <img src="./src/images/iphone.png" alt="iphone artikel" />
+            </div>
+            <div class="product-card__details">
+              <div class="product-card__reviews">
+                <span
+                  class="product-card__reviews-item product-card__reviews-item--stars"
+                >
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </span>
+                <span class="product-card__reviews-item">|</span>
+                <div
+                  class="product-card__reviews-item product-card__reviews-item--stock"
+                >
+                  <i class="fa-solid fa-check"></i>
+                  <p>Op voorraad</p>
+                </div>
+              </div>
+              <div class="product-card__description">
+                Leren hoesje met MagSafe voor iPhone 13 Pro Max
+              </div>
+              <div class="product-card__footer">
+                <div class="product-card__price-tag">
+                  <span>€80,00</span>
+                  <p>€65,00</p>
+                </div>
+                <button class="button button--product">
+                  <p class="sr-only">Voeg toe aan winkelwagen</p>
+                  <i class="fa-solid fa-bag-shopping"></i>
+                </button>
+              </div>
+            </div>
+          </article>
+          <article class="product-card swiper-slide">
+            <span class="product-card__favorite">
+              <i class="fa-regular fa-heart"></i>
+            </span>
+            <div class="product-card__image">
+              <img src="./src/images/iphone.png" alt="iphone artikel" />
+            </div>
+            <div class="product-card__details">
+              <div class="product-card__reviews">
+                <span
+                  class="product-card__reviews-item product-card__reviews-item--stars"
+                >
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </span>
+                <span class="product-card__reviews-item">|</span>
+                <div
+                  class="product-card__reviews-item product-card__reviews-item--stock"
+                >
+                  <i class="fa-solid fa-check"></i>
+                  <p>Op voorraad</p>
+                </div>
+              </div>
+              <div class="product-card__description">
+                Leren hoesje met MagSafe voor iPhone 13 Pro Max
+              </div>
+              <div class="product-card__footer">
+                <div class="product-card__price-tag">
+                  <span>€80,00</span>
+                  <p>€65,00</p>
+                </div>
+                <button class="button button--product">
+                  <p class="sr-only">Voeg toe aan winkelwagen</p>
+                  <i class="fa-solid fa-bag-shopping"></i>
+                </button>
+              </div>
+            </div>
+          </article>
+        </div>
+        <div class="swiper-controls">
+          <button class="swiper-button-prev" aria-label="Vorige product">
+            <i class="fa-solid fa-arrow-right"></i>
+          </button>
+          <div class="swiper-scrollbar"></div>
+          <button class="swiper-button-next" aria-label="Volgend product">
+            <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </div>
+      </section>
+
+      <section class="reviews section">
+        <article class="card">
+          <h2>Dit zeggen onze klanten</h2>
+          <div class="card__content">
+            <img
+              src="./src/images/webwinkel-reviews.png"
+              alt="Webwinkel keurmerk"
+            />
+            <div class="card__rating">
+              <span>9,6</span>
+            </div>
+          </div>
+          <span>Alle beoordelingen</span>
+        </article>
+        <div class="swiper reviews__slider">
+          <div class="reviews__title">Reviews</div>
+          <div class="swiper-wrapper swiper-wrapper--reviews">
+            <div class="swiper-slide swiper-slide--reviews">
+              <article class="reviews-slider__item">
+                <span class="reviews__stars">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </span>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Mauris efficitur, ligula eu imperdiet maximus, elit nulla
+                  eleifend risus, vitae ullamcorper lacus lorem sed diam.
+                  Pellentesque a euismod lectus.
+                </p>
+                <span class="reviews__author">John Doe, Roosendaal</span>
+              </article>
+            </div>
+            <div class="swiper-slide swiper-slide--reviews">
+              <article class="reviews-slider__item">
+                <span class="reviews__stars">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </span>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Mauris efficitur, ligula eu imperdiet maximus, elit nulla
+                  eleifend risus, vitae ullamcorper lacus lorem sed diam.
+                  Pellentesque a euismod lectus.
+                </p>
+                <span class="reviews__author">John Doe, Roosendaal</span>
+              </article>
+            </div>
+            <div class="swiper-slide swiper-slide--reviews">
+              <article class="reviews-slider__item">
+                <span class="reviews__stars">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </span>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Mauris efficitur, ligula eu imperdiet maximus, elit nulla
+                  eleifend risus, vitae ullamcorper lacus lorem sed diam.
+                  Pellentesque a euismod lectus.
+                </p>
+                <span class="reviews__author">John Doe, Roosendaal</span>
+              </article>
+            </div>
+            <div class="swiper-slide swiper-slide--reviews">
+              <article class="reviews-slider__item">
+                <span class="reviews__stars">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </span>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Mauris efficitur, ligula eu imperdiet maximus, elit nulla
+                  eleifend risus, vitae ullamcorper lacus lorem sed diam.
+                  Pellentesque a euismod lectus.
+                </p>
+                <span class="reviews__author">John Doe, Roosendaal</span>
+              </article>
+            </div>
+            <div class="swiper-slide swiper-slide--reviews">
+              <article class="reviews-slider__item">
+                <span class="reviews__stars">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </span>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Mauris efficitur, ligula eu imperdiet maximus, elit nulla
+                  eleifend risus, vitae ullamcorper lacus lorem sed diam.
+                  Pellentesque a euismod lectus.
+                </p>
+                <span class="reviews__author">John Doe, Roosendaal</span>
+              </article>
+            </div>
+            <div class="swiper-slide swiper-slide--reviews">
+              <article class="reviews-slider__item">
+                <span class="reviews__stars">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </span>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Mauris efficitur, ligula eu imperdiet maximus, elit nulla
+                  eleifend risus, vitae ullamcorper lacus lorem sed diam.
+                  Pellentesque a euismod lectus.
+                </p>
+                <span class="reviews__author">John Doe, Roosendaal</span>
+              </article>
+            </div>
+            <div class="swiper-slide swiper-slide--reviews">
+              <article class="reviews-slider__item">
+                <span class="reviews__stars">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </span>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Mauris efficitur, ligula eu imperdiet maximus, elit nulla
+                  eleifend risus, vitae ullamcorper lacus lorem sed diam.
+                  Pellentesque a euismod lectus.
+                </p>
+                <span class="reviews__author">John Doe, Roosendaal</span>
+              </article>
+            </div>
+          </div>
+          <div class="swiper-controls swiper-controls--reviews">
+            <button class="swiper-button-prev" aria-label="Vorige review">
+              <i class="fa-solid fa-arrow-right"></i>
+            </button>
+            <div class="swiper-scrollbar"></div>
+            <button class="swiper-button-next" aria-label="Volgende review">
+              <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="discover section">
+        <div class="discover__image">
+          <img src="./src/images/cta-image.jpg" alt="CTA image" />
+        </div>
+        <img
+          src="./src/images/samsung.jpg"
+          alt="CTA image"
+          class="floating-img"
+        />
+        <div class="discover__content">
+          <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h2>
+          <p>
+            Cras gravida pharetra libero, ut interdum turpis elementum non.
+            Etiam euismod porta ligula eget egestas. Aenean lobortis dictum
+            lacus et rhoncus. Maecenas molestie nisl lectus, eget vulputate
+            tortor imperdiet in. Sed tempor bibendum dui, eget semper turpis
+            gravida vitae.
+          </p>
+          <p>
+            Mauris mattis sodales rhoncus. Donec eu tellus id felis porta
+            convallis vitae eget risus. Integer massa enim, malesuada eu tellus
+            sit amet
+          </p>
+          <button
+            class="button button--primary"
+            aria-label="Ontdek meer"
+            onclick="location.href='/accessoires'"
+          >
+            Ontdek meer
+          </button>
+        </div>
+      </section>
+
+      <section class="swiper blog__slider section">
+        <h2 class="font-medium">Laatste blogs</h2>
+        <div class="swiper-wrapper swiper-wrapper--blog">
+          <div class="swiper-slide swiper-slide--blog">
+            <article class="blog-card">
+              <img src="./src/images/blog-image.png" alt="blog-images" />
+              <div class="blog-card__details">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Nullam tincidunt lorem ac lorem rhoncus, vel sodales
+                </p>
+                <a href="/blog" class="link" aria-label="Lees artikel">
+                  <p>Lees artikel</p>
+                  <i class="fa-solid fa-chevron-right"></i>
+                </a>
+              </div>
+            </article>
+          </div>
+          <div class="swiper-slide swiper-slide--blog">
+            <article class="blog-card">
+              <img src="./src/images/blog-image.png" alt="blog-images" />
+              <div class="blog-card__details">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Nullam tincidunt lorem ac lorem rhoncus, vel sodales
+                </p>
+                <a href="/blog" class="link" aria-label="Lees artikel">
+                  <p>Lees artikel</p>
+                  <i class="fa-solid fa-chevron-right"></i>
+                </a>
+              </div>
+            </article>
+          </div>
+          <div class="swiper-slide swiper-slide--blog">
+            <article class="blog-card">
+              <img src="./src/images/blog-image.png" alt="blog-images" />
+              <div class="blog-card__details">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Nullam tincidunt lorem ac lorem rhoncus, vel sodales
+                </p>
+                <a href="/blog" class="link" aria-label="Lees artikel">
+                  <p>Lees artikel</p>
+                  <i class="fa-solid fa-chevron-right"></i>
+                </a>
+              </div>
+            </article>
+          </div>
+          <div class="swiper-slide swiper-slide--blog">
+            <article class="blog-card">
+              <img src="./src/images/blog-image.png" alt="blog-images" />
+              <div class="blog-card__details">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Nullam tincidunt lorem ac lorem rhoncus, vel sodales
+                </p>
+                <a href="/blog" class="link" aria-label="Lees artikel">
+                  <p>Lees artikel</p>
+                  <i class="fa-solid fa-chevron-right"></i>
+                </a>
+              </div>
+            </article>
+          </div>
+ <div class="swiper-slide swiper-slide--blog">
+            <article class="blog-card">
+              <img src="./src/images/blog-image.png" alt="blog-images" />
+              <div class="blog-card__details">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Nullam tincidunt lorem ac lorem rhoncus, vel sodales
+                </p>
+                <a href="/blog" class="link" aria-label="Lees artikel">
+                  <p>Lees artikel</p>
+                  <i class="fa-solid fa-chevron-right"></i>
+                </a>
+              </div>
+            </article>
+          </div>
+          <div class="swiper-slide swiper-slide--blog">
+            <article class="blog-card">
+              <img src="./src/images/blog-image.png" alt="blog-images" />
+              <div class="blog-card__details">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Nullam tincidunt lorem ac lorem rhoncus, vel sodales
+                </p>
+                <a href="/blog" class="link" aria-label="Lees artikel">
+                  <p>Lees artikel</p>
+                  <i class="fa-solid fa-chevron-right"></i>
+                </a>
+              </div>
+            </article>
+          </div>
+          <div class="swiper-slide swiper-slide--blog">
+            <article class="blog-card">
+              <img src="./src/images/blog-image.png" alt="blog-images" />
+              <div class="blog-card__details">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Nullam tincidunt lorem ac lorem rhoncus, vel sodales
+                </p>
+                <a href="/blog" class="link" aria-label="Lees artikel">
+                  <p>Lees artikel</p>
+                  <i class="fa-solid fa-chevron-right"></i>
+                </a>
+              </div>
+            </article>
+          </div>
+        </div>
+        <div class="swiper-controls swiper-controls--blog">
+          <button class="swiper-button-prev" aria-label="Vorige blog">
+            <i class="fa-solid fa-arrow-right"></i>
+          </button>
+          <div class="swiper-scrollbar"></div>
+          <button class="swiper-button-next" aria-label="Volgende blog">
+            <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <div class="footer__container">
+          <div class="footer__block footer__contact">
+            <h3 class="footer__title">Testshop</h3>
+            <div class="footer__address">
+              <i class="fa-solid fa-location-dot"></i>
+              <div class="footer__address-details">
+                <span>Borchwerf 4E</span>
+                <span>4704 RG Roosendaal</span>
+              </div>
+            </div>
+
+            <div class="footer__phone-email">
+              <i class="fa-solid fa-phone"></i>
+              <span>0165 - 123456</span>
+            </div>
+            <a
+              href="mailto:info@redbanana.nl"
+              class="footer__email"
+              aria-label="Email"
+              target="_blank"
+            >
+              <i class="fa-solid fa-envelope"></i>
+              info@redbanana.nl
+            </a>
+          </div>
+
+          <div class="footer__block footer__hours">
+            <h3 class="footer__title">Openingstijden</h3>
+            <ul class="footer__list">
+              <li>
+                <span class="day">Maandag</span>
+                <span class="hour">08:00 – 17:00</span>
+              </li>
+              <li>
+                <span class="day">Dinsdag</span>
+                <span class="hour">08:00 – 17:00</span>
+              </li>
+              <li>
+                <span class="day">Woensdag</span>
+                <span class="hour">09:00 – 17:00</span>
+              </li>
+              <li>
+                <span class="day">Donderdag</span>
+                <span class="hour">09:00 – 17:00</span>
+              </li>
+              <li>
+                <span class="day">Vrijdag</span>
+                <span class="hour">09:00 – 17:00</span>
+              </li>
+              <li>
+                <span class="day">Zaterdag</span>
+                <span class="hour">09:00 – 17:00</span>
+              </li>
+              <li>
+                <span class="day">Zondag</span>
+                <span class="hour">GESLOTEN</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer__block footer__service">
+            <h3 class="footer__title">Klantenservice</h3>
+            <ul class="footer__list">
+              <li><a href="#">Over Testshop</a></li>
+              <li><a href="#">Verzenden & Retourneren</a></li>
+              <li><a href="#">Betaalmethoden</a></li>
+              <li><a href="#">Klantenservice</a></li>
+              <li><a href="#">Disclaimer</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Sitemap</a></li>
+              <li><a href="#">Algemene voorwaarden</a></li>
+            </ul>
+          </div>
+
+          <div class="footer__block footer__newsletter">
+            <h3 class="footer__title">Nieuwsbrief</h3>
+            <form class="footer__form" action="#" method="POST">
+              <input
+                type="email"
+                placeholder="Jouw emailadres"
+                class="footer__input"
+                aria-label="Invoer emailadres"
+                required
+              />
+              <button class="button button--primary button--big" type="submit">
+                Inschrijven
+              </button>
+<img src="./src/images/betaal-iconen.png" alt="Betaal iconen" class="footer__payment-icons" />
+            </form>
+        </div>
+      </footer>
     </main>
     <script type="module" src="/src/js/main.js"></script>
   </body>
