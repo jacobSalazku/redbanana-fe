@@ -1,0 +1,28 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+li {
+  list-style: none;
+}
+
+.section {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+
+  &--visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+button:focus:not(:focus-visible) {
+  outline: none;
+}
