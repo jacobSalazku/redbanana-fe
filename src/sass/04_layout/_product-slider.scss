@@ -1,0 +1,181 @@
+@use 'swiper/css';
+@use 'swiper/css/scrollbar';
+@use 'swiper/css/navigation';
+
+.product__slider {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: var(--space-16) 0 0 0;
+  padding: var(--space-20) var(--space-12);
+  background-color: var(--color-neutral-100);
+
+  h2 {
+    font-size: 1.25rem;
+    font-weight: 500;
+    line-height: var(--space-32);
+    text-align: left;
+    margin: 0;
+    padding-top: var(--space-16);
+
+    @media screen and (min-width: 40rem) {
+      font-size: 1.75rem;
+      line-height: var(--space-40);
+      padding-top: var(--space-40);
+    }
+  }
+
+  @media screen and (min-width: 40rem) {
+    max-width: 60rem;
+    padding-left: var(--space-12);
+  }
+
+  @media screen and (min-width: 64rem) {
+    max-width: 70rem;
+  }
+
+  @media screen and (min-width: 90rem) {
+    max-width: 90rem;
+  }
+}
+
+.swiper {
+  display: flex;
+  width: 100%;
+  height: auto;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-left: var(--space-20) !important;
+
+  @media screen and (min-width: 64rem) {
+    padding-left: var(--space-80) !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    width: 90rem;
+  }
+}
+
+.swiper-wrapper {
+  padding: var(--space-12) 0 var(--space-32);
+  width: 100%;
+}
+
+.swiper-slide {
+  height: 100%;
+  max-height: 125rem;
+  flex-shrink: 0;
+  max-width: 18.75rem;
+  cursor: pointer;
+
+  &:hover {
+    transform: translateY(-5px);
+  }
+}
+
+.swiper-controls {
+  position: relative;
+  display: none;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  height: 5rem;
+  max-width: 80%;
+  margin: 1rem var(--space-44);
+
+  @media screen and (min-width: 64rem) {
+    display: flex;
+    max-width: 80%;
+    margin: 1rem var(--space-48) var(--space-12) var(--space-80);
+  }
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  margin-top: 2rem;
+  padding: 2rem 2rem;
+  position: absolute;
+  cursor: pointer;
+  z-index: 10;
+  background-color: var(--color-neutral-175);
+  border-radius: 50%;
+  border: none;
+
+  i {
+    font-size: 1.5rem;
+    color: var(--color-neutral-900);
+  }
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  display: none !important;
+  content: none !important;
+  background: none !important;
+  border: none;
+}
+
+.swiper-button-prev {
+  rotate: 180deg;
+  top: 70%;
+  margin-left: -8%;
+
+  @media screen and (min-width: 64rem) {
+    margin-left: -8%;
+  }
+}
+
+.swiper-button-next {
+  left: 0;
+  top: 70%;
+  margin-right: -9%;
+  position: absolute;
+
+  @media screen and (min-width: 64rem) {
+    margin-right: -9%;
+  }
+}
+
+.swiper-scrollbar {
+  position: absolute;
+  bottom: 1.75rem;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  max-width: 100%;
+  height: 4px;
+  background: var(--color-neutral-200);
+  border-radius: 3px;
+  --swiper-scrollbar-bottom: 1.75rem;
+}
+
+.swiper-scrollbar-drag {
+  background: var(--color-primary-100);
+  border-radius: 3px;
+}
+
+.swiper-button-disabled {
+  opacity: 0.3;
+  pointer-events: none;
+}
+
+.bg-partial {
+  position: absolute;
+  width: 140%;
+  height: 140%;
+  margin-top: -20%;
+  margin-left: -10%;
+  background-color: var(--color-secondary-100);
+  z-index: -1;
+
+  @media screen and (min-width: 64rem) {
+    display: block;
+    top: -15%;
+    right: -32%;
+    width: 100%;
+    height: 140%;
+  }
+}
