@@ -1,0 +1,28 @@
+.link {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  cursor: pointer;
+  gap: var(--space-8);
+  color: var(--color-primary-100);
+  background-color: transparent;
+
+  i {
+    transition: transform 0.3s ease;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  &:hover {
+    background-color: transparent;
+    color: var(--color-primary-800);
+    text-decoration: none;
+  }
+
+  &:hover i {
+    transform: translateX(4px);
+    color: var(--color-primary-800);
+  }
+}

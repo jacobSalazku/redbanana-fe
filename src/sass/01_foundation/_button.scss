@@ -8,15 +8,28 @@
   border: none;
   border-radius: var(--space-4);
   max-height: 50px;
+  z-index: 1;
 
   &--primary {
     background-color: var(--color-primary-100);
     transition: background-color 0.3s ease;
     color: var(--color-neutral-100);
     width: 45%;
-    &:hover {
-      background-color: var(--color-primary-200);
-    }
+  }
+
+  &--product {
+    background-color: var(--color-primary-100);
+    color: var(--color-neutral-100);
+    width: var(--space-56);
+    height: var(--space-50);
+  }
+
+  &--big {
+    width: 100%;
+  }
+
+  &:hover {
+    background-color: var(--color-primary-800);
   }
 
   @media screen and (min-width: 60rem) {
